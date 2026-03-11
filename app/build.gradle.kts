@@ -40,6 +40,7 @@ dependencies {
     implementation(libs.constraintlayout)
 
     implementation("com.intuit.sdp:sdp-android:1.1.1")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
     implementation(libs.firebase.database)
     implementation(libs.firebase.auth)
     implementation(libs.credentials)
