@@ -16,7 +16,7 @@
     <!-- From -->
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logoimg"
         android:layout_width="@dimen/_160sdp"
         android:layout_height="@dimen/_84sdp"
         android:contentDescription="logo"
@@ -29,35 +29,35 @@
         app:srcCompat="@drawable/logo_no_back" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/logonameimg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/poppins_bold"
         android:gravity="center"
         android:text="A.Vmessenger"
         android:textColor="@color/black"
         android:textSize="@dimen/_30sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView" />
+        app:layout_constraintTop_toBottomOf="@id/logoimg" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/ownone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="FROM"
         android:textSize="@dimen/_12sdp"
         android:textStyle="bold"
         android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@id/textView3"
+        app:layout_constraintBottom_toTopOf="@id/owntwo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <!-- Developer Name -->
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/owntwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BHISHMDUTT SHARMA"
