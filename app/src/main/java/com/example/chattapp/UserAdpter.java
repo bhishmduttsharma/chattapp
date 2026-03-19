@@ -1,5 +1,6 @@
 package com.example.chattapp;
 
+import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.LayoutInflater;
@@ -41,6 +42,16 @@ public class UserAdpter extends RecyclerView.Adapter<UserAdpter.viewholder> {
         holder.userstatus.setText(users.status);
         Picasso.get().load(users.profilepic).into(holder.userimg);
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mainActivity,chatwindo.class);
+                intent.putExtra("nameeee",users.getUserName());
+                intent.putExtra("reciverImg",users.getProfilepic());
+                intent.putExtra("uid",users.getUserId());
+                mainActivity.startActivity(intent);
+            }
+        });
 
     }
 
